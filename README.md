@@ -6,7 +6,6 @@
   <img src="https://img.shields.io/badge/Streamlit-Dashboard-red" />
   <img src="https://img.shields.io/badge/Azure-Deployment-blueviolet" />
   <img src="https://img.shields.io/badge/Status-In%20Progress-yellow" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
 </p>
 
 ## 🚀 Overview
