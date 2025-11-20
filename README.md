@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Python-3.10-blue" />
   <img src="https://img.shields.io/badge/FastAPI-Backend-success" />
   <img src="https://img.shields.io/badge/Streamlit-Dashboard-red" />
-  <img src="https://img.shields.io/badge/Azure-Deployment-blueviolet" />
+  <img src="https://img.shields.io/badge/AWS-Deployment-blueviolet" />
   <img src="https://img.shields.io/badge/Status-In%20Progress-yellow" />
 </p>
 
