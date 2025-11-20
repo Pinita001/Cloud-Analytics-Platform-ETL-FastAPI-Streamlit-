@@ -1,51 +1,84 @@
-# 🟩 Cloud Analytics Platform (ETL + FastAPI + Streamlit) — README.md
+# 📘 End-to-End Cloud Data Pipeline (Python, SQL, FastAPI, Azure)
 
-## ☁️ Cloud-Based Sales & Inventory Intelligence Platform
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-success" />
+  <img src="https://img.shields.io/badge/Streamlit-Dashboard-red" />
+  <img src="https://img.shields.io/badge/Azure-Deployment-blueviolet" />
+  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
 
-A cloud-ready analytics system featuring an ETL pipeline, forecasting API, and interactive dashboard.
+## 🚀 Overview
 
-### 🔍 What This Project Does
+This project is an **end-to-end cloud-ready data pipeline** designed to simulate a real enterprise analytics workflow. It integrates **Python-based ETL**, **SQL transformations**, **FastAPI backend services**, and a **Streamlit analytics dashboard**, all prepared for **Azure cloud deployment**.
 
-* Cleans & processes **1,000+ sales records**
-* Generates KPIs (revenue, top products, stock levels)
-* Sends data to **FastAPI microservices**
-* Displays insights in a **Streamlit dashboard**
-* Designed for **Azure deployment**
+## ⭐ Features
 
-### 🛠 Tech Stack
+### ✅ Implemented
 
-* **Python:** Pandas, NumPy
-* **API:** FastAPI
-* **Cloud:** Azure App Service
+* Python ETL pipeline (extraction, validation, transformation)
+* SQL schema + transformations
+* FastAPI backend with structured API routes
+* Streamlit dashboard for data exploration
+* Azure-ready project structure for deployment
+
+### 🔧 In Progress
+
+* Azure deployment pipeline
+* Authentication for API + dashboard
+* Automated scheduled ETL jobs
+
+## 🏗️ Architecture
+
+```
+              ┌──────────────────────────┐
+              │        Raw Data         │
+              └────────────┬────────────┘
+                           ↓
+               Python ETL (Ingestion, Cleaning)
+                           ↓
+             ┌──────────────────────────┐
+             │       SQL Database       │
+             └────────────┬────────────┘
+                           ↓
+                    FastAPI Backend
+                           ↓
+                  Streamlit Dashboard
+                           ↓
+                      Azure Cloud
+```
+
+## 📂 Tech Stack
+
+* **Core:** Python, SQL
+* **Backend:** FastAPI, Uvicorn
 * **Dashboard:** Streamlit
-* **Database:** SQL / CSV
+* **Cloud:** Azure (App Services + SQL deployment target)
+* **Libraries:** Pandas, Pydantic
 
-## 📡 Architecture Overview
+## 🖥️ Screenshots (Add your screenshots here)
 
-<img width="850" height="699" alt="Screenshot 2025-11-20 at 8 37 31 PM" src="https://github.com/user-attachments/assets/d5d6d3ce-7bbe-4248-bd7f-f3946782e0ad" />
 
-**_System architecture of the Cloud-Based Sales Intelligence Platform. Azure Functions handle data ingestion, FastAPI manages processing, and Streamlit powers the analytics dashboard._**
+## 🛠️ Setup
 
-### 📁 Folder Structure
+```bash
+git clone <repo-url>
+cd cloud-pipeline
+pip install -r requirements.txt
 
+# Run API
+uvicorn main:app --reload
+
+# Run Dashboard
+streamlit run dashboard.py
 ```
-/etl
-   └── pipeline.py
-/api
-   ├── main.py
-   └── forecast.py
-/dashboard
-   └── app.py
-```
-### ☁️ Deployment (Azure)
 
-* Azure App Service (API hosting)
-* Azure Storage (data files)
-* Streamlit Cloud or Azure Container Apps (dashboard)
+## 📌 Future Enhancements
 
-### 📌 Future Improvements
+* Full Azure CI/CD
+* API rate limiting + caching
+* Expanded dashboard analytics
 
-* Add Docker containerisation
-* Add CI/CD (GitHub Actions)
-* Migrate to Azure SQL Database
-* Add authentication for the dashboard
+---
+
